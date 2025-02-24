@@ -1,0 +1,31 @@
+KMS <- read.csv("KMS305.csv",
+                header=T)
+
+GetDistribution <- function(df){
+  variable.No <- ncol(df) #calculates number of columns in data.frame
+  for(i in 1:variable.No){
+    hist(df[,i]) #get hist for each column
+  }
+}
+
+GetDistribution(KMS)
+
+GetDistribution2 <- function(df){
+  variable.No <- ncol(df) #calculates number of columns in data.frame
+  for(i in 1:variable.No){
+    TmpFileName <- paste("PlotHistFigures/",i,"-",colnames(df)[i],".png",sep="")
+    png(file=TmpFileName)
+    hist(df[,i]) #get hist for each column
+    dev.off()
+  }
+}
+GetDistribution2(KMS)
+
+
+rcal <- function(x,y)
+{
+  z <- x^2 + y^2 
+  result <- sqrt(z)
+  return(result) #Return Value
+}
+rcal(3,4)

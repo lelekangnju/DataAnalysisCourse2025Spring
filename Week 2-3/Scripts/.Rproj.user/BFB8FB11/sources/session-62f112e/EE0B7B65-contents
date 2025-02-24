@@ -1,0 +1,29 @@
+---
+title: "Homework Week 3, Data Analytics and Practice"
+author: "Lele Kang, MG2312312"
+date: '2022-03-02'
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Question 1:
+
+Write a script to analyze the data cars:
+
+```{r}
+yy <- c(32,32,32)
+yy
+```
+
+##question 2:
+```{r}
+aa <- matrix(1:12,3,4)
+aa
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

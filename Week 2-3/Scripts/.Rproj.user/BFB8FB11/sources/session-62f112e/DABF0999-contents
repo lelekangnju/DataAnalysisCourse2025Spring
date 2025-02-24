@@ -1,0 +1,54 @@
+test <- c(32,2332,32,32)
+test2 <- c(32,2332,"32",32)
+
+test3<- c(T,F,T,F)
+
+
+Mydata <- c(2,34,3.5,-1,-78)
+Mydata
+Mydata > 0  # Test on elements
+Mydata[Mydata > 0] # Extract the positive elments
+Mydata[-c(1,3)] # Remove elements
+
+
+x <- c(5,-2,3,-7)
+y <- c(1,2,3,4) * 10 #Operation on all the elements
+y
+sort(x) #Soring a vector
+order(x) #Element order for sorting
+y[order(x)] #Operation on all the components
+rev(x) #Reverse a vector
+
+
+m <- matrix(1:12, 4, byrow = F); m
+m <- matrix(seq(2,20,2), 2, byrow = T); m 
+y <- -1:2; m;y
+m.new <- m + y; m.new
+y <- 0:2; 
+m.new <- m + y
+m.new; t(m.new) ; help(t)
+
+x <- c(1, 2, 3, NA)
+
+log(c(0,1,2))
+
+
+x <- c("a", "b", "c", "d", "e", "f", "g", "h")
+x[1]; x[3:5]; x[-(3:5)]
+
+x[-c(3:5)]
+
+
+x[c(T, F, T, F, T, F, T, F)]
+
+x[x <= "d"]
+
+
+a<-c("China", "Korea", "Japan", "UK", "USA", "France", "India", "Russia") #character vector
+y <- matrix(c(seq(from=3, to=30, by=3 )),nrow=2,byrow=T) 
+my.list <- list(name="Fred", mynumbers=a, mymatrix=y, age=5.3)
+
+
+
+?list
+
